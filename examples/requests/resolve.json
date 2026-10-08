@@ -1,0 +1,1 @@
+{"schema":"ata-call/v1","tool":"tickets.set_status","arguments":{"project":"support","ticket_id":"T-100","status":"resolved","expected_version":1}}

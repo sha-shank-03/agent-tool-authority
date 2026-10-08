@@ -1,0 +1,33 @@
+name: Offline authority verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        os: [windows-2025, ubuntu-24.04]
+    steps:
+      - name: Read-only checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          set-safe-directory: false
+      - name: Exact Python baseline
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11.9'
+          architecture: x64
+          check-latest: false
+      - name: Tests, fresh mock demo, approval, rejection and native negative exits
+        run: python scripts/verify_repository.py

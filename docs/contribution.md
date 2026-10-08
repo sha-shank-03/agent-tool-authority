@@ -1,0 +1,11 @@
+# Problem, overlap and contribution
+
+A developer integrating model tool calls needs to answer: which exact principal may affect which resource, which effects require a separate operator decision, and what happened when approval expired or execution failed? A model-generated `approved` field is insufficient. This project makes those decisions in host code and provides an offline, inspectable local journey.
+
+OPA already covers policy evaluation and documents agent tool calling; Cedar provides authorization policy semantics; LangGraph interrupts support human review; OWASP discusses excessive agency. This repository does not replace those systems or claim that policy gates, approvals or tool mediation are novel. Those primary sources were read during planning on 2026-10-07; exact links and scope are in PLAN.md and THIRD_PARTY_NOTICES.md. Their code and policy/protocol formats are not used.
+
+The contribution is a small coherent integration: finite resource/status scopes, host-bound identity, exact canonical action review, pending/grant expiry, drift rejection and atomic local effect/grant/audit commit. Meaningful tests inspect actual resource/grant/audit state during denial, rollback, concurrent resume and controlled commit interruption. The bounded mock harness also exercises stalled writes and direct-child cleanup. The review script captures actual native negative exits and source/runtime evidence. It is useful as a reference integration and reproducible authority testbed, without a service or model dependency.
+
+The deliberately narrow policy vocabulary and two local ticket tools keep decisions reviewable. Python's standard library supplies JSON, hashing, processes, threads, CLI and SQLite; no dependency installation is needed. A larger application would need its own authentication, protected operator transport, complete mediation, remote idempotency contract and trust/isolation design before using external effects. That work is outside this MVP.
+
+Contribution does not mean adoption, benchmark improvement, general security, external exactly-once effects or broad ecosystem novelty. The repository contains only fictional examples and local evidence. M1/M2 passed independent main review; M3 completion still requires whole-repository independent acceptance.

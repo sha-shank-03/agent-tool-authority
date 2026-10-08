@@ -1,0 +1,18 @@
+{
+  "slug": "agent-tool-authority",
+  "label": "final-main-manual",
+  "argv": [
+    "powershell.exe",
+    "-NoProfile",
+    "-File",
+    "scripts/manual_operator.ps1"
+  ],
+  "cwd": "<local-portfolio>\\agent-tool-authority",
+  "started_at_utc": "2026-10-08T02:21:18.133745+00:00",
+  "duration_seconds": 0.625,
+  "exit_code": 1,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nNameError: name 'executable' is not defined\nSelect Python 3.11.9 with py -3.11.\nAt <local-portfolio>\\agent-tool-authority\\scripts\\manual_operator.ps1:6 \nchar:61\n+ ... .python -ne '3.11.9') { throw 'Select Python 3.11.9 with py -3.11.' }\n+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : OperationStopped: (Select Python 3.11.9 with py -3.11.:String) [], RuntimeException\n    + FullyQualifiedErrorId : Select Python 3.11.9 with py -3.11.\n \n",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

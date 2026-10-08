@@ -1,0 +1,25 @@
+{
+  "review_id": "FINAL",
+  "reviewed_at_utc": "2026-10-08T02:35:01.998080+00:00",
+  "status": "passed",
+  "summary": "Whole repository independently accepted for agreed local MVP after bounded review-script correction.",
+  "assertions": "44 meaningful tests and20 actual verifier subprocess commands (19CLI plus unit suite) pass, with expected0/2/3/4 gates. Main independently reopens five real SQLite stores: demo/approved resolve exactly once, CONSUMED and replay refusal; rejected request remains terminal/all tickets open1/zero mutation audits. Pending/APPROVED snapshots retain no mutation; ordered audit export matches real store. Six previous raw receipts preserved. Corrected manual runtime probe freshly passes both native WindowsPowerShell5.1.26100.9444 and PowerShell7.6.5,18CLI commands with exact native exits and finalSQL. All exercised core/tests/examples/verifier/CI hashes unchanged; only one probe line and honest docs/evidence changed.",
+  "inspection": "Main inspected gateway finite policy/scopes/host-bound identity, transaction/expiry/drift/action rechecks, savepoint rollback, audit/consumed commit, bounded mock process cleanup at M1/M2. Final review inspected verifier and manual operator script, architecture/contracts/contribution/limits, READMEWindows/POSIX entry paths, MIT/runtime/SQLite/action attribution, preserved actual evidence and immutable read-only boundedWindows/Linux CI. Primary pins/licenses/runtime assets independently checked; native two-shell correction verified after concrete failure, without repeating unchanged passing unit tests.",
+  "limitations": "Trusted host/operator/policy/database/UTC clock/adapters and complete mediation required; facade is not OS isolation, fingerprint not signature, database-owner mutable audit. Atomic local committed effect is not exactly-once invocation or external effects; deadline controls dispatch and does not interrupt an adapter. Direct-child control is not descendant containment/power-loss durability/security certification. Fresh fictional scripted mock/local SQLite tools, no live or recorded model evaluation or enterprise authentication study. Native shell runs are from PowerShell7.6.5; Python-launched WinPS can inherit incompatible Core module paths, a preserved separate environment preflight failure. HostedCI/YAMLengine/POSIX/Linux/otherPython/production/security/performance remain unexecuted or outside scope. Originalmain WinPS quoted-probe failure remains preserved and resolved by the bounded correction; no installs/publication/push/deploy.",
+  "repository": "agent-tool-authority",
+  "scope": "Coordinating-agent review, separate from implementation worker; not third-party certification.",
+  "local_path_redaction": "Personal host prefixes replaced. Original receipt hashes below describe the unredacted local source; exports have separate hashes.",
+  "publication_change_scope": "README/AGENTS/contributor/context/evidence exports and ignore/attribute portability only. Runtime, tests, fixtures and dependency pins remain as accepted.",
+  "command_receipt_exports": [
+    {
+      "path": "docs/verification/main-command-00-final-main-verifier.json",
+      "source_receipt_sha256": "e5c3155fb489b8655cab60894af322af4b977d0ef297afe665b459d670669381",
+      "export_sha256": "a8421fbd387503ff366f687cf7775d69d111bebbbf564d230ab4c0e15d0c2b21"
+    },
+    {
+      "path": "docs/verification/main-command-06-final-main-manual.json",
+      "source_receipt_sha256": "475659d22ba018507a652fff7e5a079e7a3e3f07780afb6ee0ba8ceef579d11c",
+      "export_sha256": "8bd5ad4fb81b2ae278270b22b1d6a8c23791bb9de11b9d2fe96dcf9734e94009"
+    }
+  ]
+}
